@@ -293,7 +293,8 @@ namespace DLaB.EarlyBoundGenerator.Settings
                     new Argument(CreationType.Entities, "namingservice", "DLaB.CrmSvcUtilExtensions.Entity.OverridePropertyNames,DLaB.CrmSvcUtilExtensions"),
                     new Argument(CreationType.OptionSets, "codecustomization", "DLaB.CrmSvcUtilExtensions.OptionSet.CreateOptionSetEnums,DLaB.CrmSvcUtilExtensions"),
                     new Argument(CreationType.OptionSets, "codegenerationservice", "DLaB.CrmSvcUtilExtensions.OptionSet.CustomCodeGenerationService,DLaB.CrmSvcUtilExtensions"),
-                    new Argument(CreationType.OptionSets, "codewriterfilter", "DLaB.CrmSvcUtilExtensions.OptionSet.FilterOptionSetEnums,DLaB.CrmSvcUtilExtensions")
+                    new Argument(CreationType.OptionSets, "codewriterfilter", "DLaB.CrmSvcUtilExtensions.OptionSet.Transliteration.FilteringService,DLaB.CrmSvcUtilExtensions"),
+                    new Argument(CreationType.OptionSets, "namingservice", "DLaB.CrmSvcUtilExtensions.OptionSet.NamingService,DLaB.CrmSvcUtilExtensions")
                 }),
                 ExtensionConfig = ExtensionConfig.GetDefault(),
                 UserArguments = new List<Argument>(new [] {

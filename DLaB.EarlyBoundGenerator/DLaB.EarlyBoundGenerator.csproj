@@ -191,7 +191,8 @@
 </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /I /Y "$(TargetDir)DLaB.*.dll" "$(SolutionDir)XrmToolBox\$(ConfigurationName)\Plugins\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /I /Y "$(TargetDir)DLaB.*.dll" "$(SolutionDir)XrmToolBox\$(ConfigurationName)\Plugins\"
+xcopy /I /Y "$(TargetDir)DLaB.*.pdb" "$(SolutionDir)XrmToolBox\$(ConfigurationName)\Plugins\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

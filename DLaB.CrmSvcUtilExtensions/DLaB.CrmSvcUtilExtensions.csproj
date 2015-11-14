@@ -60,8 +60,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.TeamFoundation.VersionControl.Client, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.TeamFoundation.VersionControl.Client.11.0.51106.2\lib\Microsoft.TeamFoundation.VersionControl.Client.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Microsoft.TeamFoundation.VersionControl.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.VersionControl.Common">
+      <HintPath>..\..\..\..\..\..\Microsoft.TeamFoundation.VersionControl.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.Services.Client, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\nuget-bot.Microsoft.VisualStudio.Services.Client.12.0.21005.1\lib\net45\Microsoft.VisualStudio.Services.Client.dll</HintPath>
@@ -111,9 +114,15 @@
     <Compile Include="BaseCustomCodeGenerationService.cs" />
     <Compile Include="Entity\AttributeConstGenerator.cs" />
     <Compile Include="Entity\CustomCodeGenerationService.cs" />
+    <Compile Include="OptionSet\Transliteration\Alphabets\Ukrainian.cs" />
+    <Compile Include="OptionSet\Transliteration\Alphabets\Russian.cs" />
     <Compile Include="Entity\MemberAttributes.cs" />
     <Compile Include="ConfigHelper.cs" />
     <Compile Include="Entity\AnonymousTypeConstructorGenerator.cs" />
+    <Compile Include="OptionSet\NamingService.cs" />
+    <Compile Include="OptionSet\Transliteration\CodeCustomisationService.cs" />
+    <Compile Include="OptionSet\Transliteration\FilteringService.cs" />
+    <Compile Include="OptionSet\Transliteration\TransliterationAlphabet.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="OptionSet\CreateOptionSetEnums.cs" />
     <Compile Include="Entity\CustomizeCodeDomService.cs" />

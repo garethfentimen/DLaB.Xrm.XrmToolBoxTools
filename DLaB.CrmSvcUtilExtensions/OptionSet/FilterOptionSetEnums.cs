@@ -171,7 +171,7 @@ namespace DLaB.CrmSvcUtilExtensions.OptionSet
 
         public bool GenerateOption(OptionMetadata optionMetadata, IServiceProvider services)
         {
-            HandleInvalidCSharpName(optionMetadata);
+            //HandleInvalidCSharpName(optionMetadata);
 
             return DefaultService.GenerateOption(optionMetadata, services);
         }
